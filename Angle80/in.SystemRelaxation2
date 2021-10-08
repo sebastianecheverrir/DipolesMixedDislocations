@@ -1,0 +1,28 @@
+
+################################################
+#needed settings
+units           metal
+atom_style      atomic
+boundary        p p p
+
+#################################################
+read_data data.FeC_mixed_UnRelaxed 
+
+#################################################
+#defining potential
+pair_style       eam/alloy
+pair_coeff       * * FeC-Becquart2013.eam C  Fe 
+
+#################################################
+#preparing relaxation
+thermo     100
+min_style  cg
+
+#################################################
+#running minimisation
+minimize   0 0 100 10000000
+
+#################################################
+#Writing relaxed file 
+write_data      data.FeC_mixed_Relaxed
+
