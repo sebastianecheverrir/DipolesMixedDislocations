@@ -2,7 +2,7 @@
 
 Scripts to generate systems containing dipoles of dislocations to be used to run molecular dynamics simulations with [Lammps](https://lammps.sandia.gov/). All the dislocations are of the type  1/2<111> and the glide plane is {110} in b.c.c. crystals (Fe).
 
-The character of the dislocations is given by their angle, as shown in the following table. The x, y and z values represent the orientation of the crystal in the simulation box. For each dislocation character, a folder is included. To generate the system, execute the bash file  `main_Fe_mixed.sh`. It produces a file called `data.FeC_mixed_Relaxed` containing the dislocation quadrupole (and an interstitial C atom.)
+The character of the dislocations is given by their angle, as shown in the following table. The x, y and z values represent the orientation of the crystal in the simulation box. For each dislocation character, a folder is included. To generate the system, execute the bash file  `main_Fe_mixed.sh`. It produces a file called `data.FeC_mixed_Relaxed` containing the dislocation dipole (and an interstitial C atom.)
 
 The boxes are oriented in such a way that the dislocation line is parallel to the z direction,and the glide plane is y. b_x and b_z correspond to the edge and screw components of the burgers vector of the dislocations. 
 
